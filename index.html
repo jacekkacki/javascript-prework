@@ -3,15 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-			<button id="play-rock">kamień</button>
-			<button id="play-paper">papier</button>
-			<button id="play-scissors">nożyce</button>
-		<div id="messages"></div>
+	<header>
+		<div class="container head-page">
+			<div class="row">
+				<h1 class="page-title">ZAPRASZAM DO ZAGRANIA W PROSTĄ GRĘ LOSOWĄ :)</h1>
+				<div class="col-md-9"
+					<h1 class="page-subtitle">GRA - KAMIEŃ/PAPIER/NOŻYCE</h1>
+				</div>
+				<div class="col-md-3"
+	  			<nav>
+	    			<a href="#">Home</a>
+	    			<a href="#">Reguły</a>
+	    			<a href="#">Autor</a>
+	  			</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+		<div class="container">
+			<p>Grasz z komputerem, masz do wyboru:</p>
+			<div id="buttons"></div>
+				<button id="play-rock">kamień</button>
+				<button id="play-paper">papier</button>
+				<button id="play-scissors">nożyce</button>
+				<button id="play-clear">wyczyść</button>
+			<div id="messages"></div>
+		</div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

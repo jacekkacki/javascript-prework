@@ -3,13 +3,12 @@ function printMessage(msg){
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
+function printResult(msg){
+	var div = document.createElement('div');
+	div.innerHTML = msg;
+	document.getElementById('result').appendChild(div);
+}
 
 function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
-
-//let computerMove = 'kamień';
-
-//let playerMove = 'papier';
-
-//printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
