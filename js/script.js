@@ -71,18 +71,20 @@ function playGame(playerInput){
         printMessage('Ty wygrywasz!');
         playerWinCounter = playerWinCounter + 1;
       }
-
+      printMessage('Wynik rozgrywki Ty:Computer');
+      printMessage(playerWinCounter + ':' + computerWinCounter);
       if( argPlayerMove == 'wyczyść'){
         clearMessages();
         playerWinCounter = 0;
         computerWinCounter = 0;
       }
-      printMessage('Wynik rozgrywki Ty:Computer');
-      printMessage(playerWinCounter + ':' + computerWinCounter);
     }
-
-  console.log('Gracz wpisał: ' + playerInput);
-  console.log('PlayerMove: ' + playerMove);
+      displayResult(computerMove, playerMove);
+      if (playerWinCounter == 3 && computerWinCounter < 3){
+        printMessage('Jesteś MISTRZEM !');
+      }  else if (computerWinCounter == 3 && playerWinCounter < 3){
+        printMessage('Komputer jest MISTRZEM !');
+      }
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){

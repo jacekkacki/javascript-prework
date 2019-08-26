@@ -3,17 +3,18 @@
 	box-sizing: border-box;
 }
 /*Variables*/
-/*kolor jasny*/
+/*color light*/
 $color-light: #ffffff;
-/*kolor ciemny*/
+/*color dark*/
 $color-dark: #2c2c54;
-/*kolor tła*/
+/*color background*/
 $color-back: #dfe6e9;
 
 $font-text: 'Berkshire Swash', cursive;
 $font-header: 'PT Serif', serif;
 
 body {
+		height: 100vh;
     margin: 0;
     text-align: left;
     font-family: $font-header;
@@ -27,23 +28,20 @@ body {
     margin: 0 auto;
 		background-color: $color-back;
 }
-.head-page {
-		background-color: $color-light;
-}
 .page-title {
     color: $color-dark;
-    font-size: 40px;
+    font-size: 30px;
     font-family: $font-text;
     margin: 20px 0 0 0;
 }
 .page-subtitle {
     color: $color-light;
-    font-size: 40px;
+    font-size: 30px;
     font-family: $font-header;
     margin: 20px 0 0 0;
 }
-a {
-		text-decoration: none;
-		color: $color-dark;
-		margin-right: 20px;
-	}
+nav	a {
+				text-decoration: none;
+				color: $color-dark;
+				margin-right: 10px;
+			}
